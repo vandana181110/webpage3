@@ -73,7 +73,7 @@ table{
 }
 .feature div{
     width: 25%;
-    height:400;
+    height:400px;
 }
 .feature div h2{
   font-size: 30px;
@@ -88,7 +88,7 @@ table{
     text-align:justify;
     font-size: 15px;
 }
-/* our feature section start */
+/* our feature section end */
 /* About us section start */
 .about{
     width:100%;
@@ -139,8 +139,73 @@ h3{
     color:black;
     font-size: xx-large;
 }
+/* service secton END */
+/* footer section start */
+footer{
+    background-color: #022D7C;
+    color:#fff;
+    text-align: center;
+    padding:15px;
 
+}
+/* footer section start */
 
+/* Responsive */
+@media screen and (max-width:1024px){
+    header{
+        padding:15px;
+    }
+    header h2{
+        font-size:20px;
+    }
 
+}
 
-/* service secton start */
+@media screen and (max-width:992px){
+    header{
+        padding:10px;
+    }
+    header h2{
+        font-size:24px;
+    }
+    .banner{
+        padding:0px;
+
+    }
+    .feature{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .feature div{
+        width:50%;
+        height:450px;
+    }
+    .feature div img,
+    .feature div p,
+    .feature div h2 {
+        margin-left:-50%;
+    }
+    .about{
+        padding:20px;
+    }
+    .service{
+        padding:10px;
+    }
+    .service .upper,
+    .service .lower{
+        flex-direction: column;
+    }
+    .service .content{
+        width:50%;
+    }
+    .service .img{
+        width:30%;
+    }
+    footer{
+        padding:10px;
+    }
+    footer h4{
+        font-size: x-small;
+    }
+}
