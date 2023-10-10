@@ -158,9 +158,20 @@ footer{
     header h2{
         font-size:20px;
     }
+    .banner{
+        padding:0px 10px;
+    }
+    .feature{
+        padding:40px 30px;
+    }
+    .feature div h2{
+        font-size:20px;
+    }
+    .service .upper .content{
+        margin-left: 70px;
+    }
 
-}
-
+    }
 @media screen and (max-width:992px){
     header{
         padding:10px;
@@ -172,20 +183,21 @@ footer{
         padding:0px;
 
     }
-    .feature{
+     .feature{ 
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
     .feature div{
-        width:50%;
+        width:100%;
         height:450px;
     }
-    .feature div img,
-    .feature div p,
-    .feature div h2 {
-        margin-left:-50%;
-    }
+     .feature div img, 
+     .feature div p, 
+     .feature div h2 { 
+    
+    margin-left:-50%; 
+    } 
     .about{
         padding:20px;
     }
@@ -208,4 +220,68 @@ footer{
     footer h4{
         font-size: x-small;
     }
+}
+@media screen and (max-width:475px)
+{
+ header h2{
+    font-size: 15px;
+ }
+ .banner{
+    flex-direction: column;
+    text-align: center;
+ }
+ .banner h1 {
+    font-size:30px;
+ }
+ .banner h1 span{
+    font-size:40px;
+ }
+ .feature{
+    display:block;
+    
+ }
+ .feature div{
+    width:100%;
+    padding:2px;
+    display: block;
+ }
+ .feature div img{
+    width:100%;
+  margin-left:10px;
+ }
+ .feature div p{
+    margin-left: 2px;
+   text-align:justify;
+}
+.feature div h2{
+    margin-left:3px;
+}
+.service {
+     width:80%;
+    display:block;
+}
+.service div{
+   
+    display: block;
+}
+.service .upper .image,
+.service .lower .image{
+    width:300px;
+    margin-left:-155px;
+}
+.service .upper .content,
+.service .lower .content{
+   margin-left:0px;
+   width:100%;
+   text-align: justify; 
+
+}
+.service .upper .content{
+    padding-left:30px;
+}
+.service .lower .content{
+    padding-right:-60px;
+    margin-left:100px;
+}
+
 }
